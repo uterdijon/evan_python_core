@@ -4,7 +4,6 @@
 --------------------------------------------------------
 
 Construct a function according to the following description,
-then draw a stack diagram of an execution with ‘2000’ as input.
 
 -- DESCRIPTION --
 We add a Leap Day on February 29, almost every four years.
@@ -37,4 +36,25 @@ You can use the viz mode here:
 http://www.pythontutor.com/visualize.html#mode=edit
 for better visual understanding and support in creating the stack diagram.
 
+
+import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(("localhost", 52697))
 '''
+def check_leap_year():
+    year = int(input("This program checks whether a given year is a leap "
+                    "year or not. Enter the year you would like to check: "))
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400:
+                print(year,"is a leap year.")
+                return True
+            else:
+                print(year,"is not a leap year.")
+                return False
+        else:
+            print(year,"is a leap year.")
+            return True
+    else:
+        print(year,"is not a leap year.")
+        return False
+
+check_leap_year()
