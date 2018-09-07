@@ -39,6 +39,8 @@ for better visual understanding and support in creating the stack diagram.
 
 import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(("localhost", 52697))
 '''
+
+###################
 def check_leap_year():
     year = int(input("This program checks whether a given year is a leap "
                     "year or not. Enter the year you would like to check: "))
@@ -58,3 +60,4 @@ def check_leap_year():
         return False
 
 check_leap_year()
+###################
