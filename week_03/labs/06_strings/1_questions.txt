@@ -1,6 +1,8 @@
 1 - What is a string?
+        A string is a sequence of characters in a fixed order.
 
 2 - What is an index?
+        An index is a way to refer to the location of an item in a string or list.
 
 3 - What letter will the following code print? Why?
 
@@ -8,26 +10,108 @@
     index_two = word[2]
     print index_two
 
+        This will print "l"
+
 4 - What is the len() functions used for?
+        This function returns the length of a string.
 
 5 - How can you get the last character of a word using the len() function?
+        letter = word[(len(word))-1]
 
 6 - What is string slicing and how does it work?
+        String slicing allows you to select elements in the string based on their index: _string[1:2]
 
 7 - How to do slice the string "python" to produce the string "thon"?
+        word = "python"
+        slice = word[2:6]
 
 8 - How can you use slicing to store the first and last character of a word in separate variables?
+        word = "python"
+        first = word[0]
+        last = word[5]
 
 9 - What are the answers to Exercise 8.4 (p.80) from the textbook?
 
+
+This function doesn't work because a function returns one value, the
+def any_lowercase1(s):
+    for c in s:
+        if c.islower():
+            return True
+        else:
+            return False
+
+
+This function returns a string.
+def any_lowercase2(s):
+    for c in s:
+        if 'c'.islower():
+            return 'True'
+        else:
+            return 'False'
+
+
+def any_lowercase3(s):
+    for c in s:
+        flag = c.islower()
+    return flag
+
+
+
+def any_lowercase4(s):
+    flag = False
+    for c in s:
+        flag = flag or c.islower()
+return flag
+
+def any_lowercase5(s):
+    for c in s:
+        if not c.islower():
+            return False
+return True
+
+
+
+
+
+
+
+
+
 10 - Can you change one or more character of a string? Why or why not?
+        No, you cannot, because a string is immutable.
 
 11 - What is invocation?
+        Invocation is the word used for calling a method on an object.
 
 12 - How do you invoke the find() method on the string word with the value 'hello' to find the index of the letter e?
+        word = "hello"
+        test = word.find("e")
+        print(test)
+
 
 13 - Complete Exercise 8.5 (p.80) (Caesar cypher) from the textbook.
+
+########################
+def encoder():
+    starting_string = str(input("Enter a message: "))
+    degree = int(input("Enter a number: "))
+    encoded = []
+    for b in starting_string:
+        c = ord(b)
+        d = c + degree
+        e = chr(d)
+        encoded.append(e)
+        str1 = ''.join(encoded)
+    print("Your encoded message is: ",str1)
+
+encoder()
+########################
+
 
 14 - Follow the directions for Exercise 8.1 (p.79) until you feel comfortable with the string methods and what methods are available.
 
 15 - How is the in operator used?
+
+    "in" is used between two strings and returns True if the first string appears as a substring in the second.
+

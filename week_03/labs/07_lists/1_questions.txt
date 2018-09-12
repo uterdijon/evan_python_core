@@ -1,44 +1,79 @@
-1 - Can you have a list with more than one type?
+'''1 - Can you have a list with more than one type?
+        Yes, you can but it is not recommended.
 
 2 - How do you create a list?
+        Either: _list = []
+        or:     _list = list()
 
 3 - How do you nest a list?
+        Like this: [1, 2, 3, [1, 2]]
 
 4 - Lists are mutable. Explain this.
+        We can replace items in a list by using the index: list[1] = 12
 
 5 - What does it mean to have the [] operators on the left side of an assignment?
+        It means that the value on the right side of the argument is in the list at the particular index.
 
 6 - What happens with a index value is negative? How does this change how an element is accessed?
+        For a negative index value, we count back from the end of the list.
 
 7 - How can you use the in operator to determine in a value exists in a list?
+        For example: print("a" in ["b","q","a"])
 
 8 - How can you use the + and * operators on lists?
+        The + operator concatenates lists. For example: a = [4, 5, 6]
+                                                        b = [7, 8. 9]
+                                                        c = a + b
+                                                        c
+                                                        [4, 5, 6, 7, 8, 9]
+        The * operator repeats a list: [1, 2] * 2
+                                       [1, 2, 1, 2]
 
 9 - What is an augmented assignment statement?
+        The augmented assignment statement is a short way to update a variable: total += 3 (this adds 3 to total)
 
 10 - WHat are three ways delete an element from a list? How are they different?
+        _list.pop(a)     This takes an item from the list and returns it so it can be put into a variable.
+        del list[1]      This deletes the element at the given index.
+        list.remove(a)   This removes the element by name instead of index.
 
 11 - What is the difference between and list and a string?
+        A list is mutable and does not have a fixed order. A string is immutable and has a fixed order.
 
 12 - What is the difference between the list() function and the split() method?
+        The list() function takes a string and makes it into a list composed of every character. The split method splits the string at a specified delimiter.
 
 13 - How do you use a delimiter with the split() method?
+        like this: string.split(";")
 
 14 - What is the `is` operator used for?
+        It checks if two variables are equivalent (refer to the same value).
 
 15 - If two objects are identical does that also make them equivalent?
+        Yes, it does.
 
 16 - If two objects are equivalent does that also make them identical?
+        No, it doesn't.
 
 17 - What is a reference?
+        The association between a variable and an object.
 
 18 - What is it called when an object has more than one reference?
+        We say that the object is "aliased".
 
 19 - Give an example of an operation that modifies a list.
+        del list[3]
 
 20 - Give an example of an operation that creates a new list.
+         The + operator takes two lists and creates a new list: t1 = [1, 2, 3]
+                                                               t2 = t1 + [4]
+                                                               print(t2)
+                                                               [1, 2, 3, 4]
 
 21 - What is one reason it is important to know the difference between the two kinds of operations above?
+        This is important when we want to continue using the original list in modified form rather than using a new list.
+
+'''
 
 
 
