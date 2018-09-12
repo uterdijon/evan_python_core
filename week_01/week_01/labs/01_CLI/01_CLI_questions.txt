@@ -1,0 +1,23 @@
+1 - Using the command line, how do you:
+    - change directories? 
+            cd
+    - list the contents of a folder?
+            ls
+    - print the path of the current directory?
+            pwd
+    - move a file from one location to the another?
+            mv
+    - copy a file from one location to another?
+            cp
+    - create a file?
+            touch
+    - create a folder?
+            mkdir
+    - delete a file?
+            rm
+    - delete a folder?
+            rmdir
+    - print the contents of a file?
+            less or cat
+    - edit the contents of a file?
+            vi

@@ -1,0 +1,29 @@
+0 - Why do we not program in plain English (or another natural language)?
+        Computers can only understand machine code written in 0s and 1s. We use a high-level language like Python to produce a source code that an interpreter or compiler can translate into machine code for the computer to understand.
+
+1 - What is the difference between an interpretor and a compiler?
+        An interpreter translates a program one line a time, a complier translates the whole program at the same time.
+    Which is used for Python?
+        Python uses an interpreter.
+
+2 - What are two ways to execute Python code?
+        Python can be executed in Terminal in interactive mode by typing "python" and then typing one line at a time and Terminal will respond to the code. Otherwise, we can use script mode, where we write the code in a .py file and type "python example.py" in Terminal and it runs the entire program.
+
+3 - How do you execute a Python script?
+        See above.
+
+4 - In your own words describe what a program is and what programs are made up of.
+        A computer program is a set of instructions for a computer to accomplish a desired task. Generally, this involves getting some kind of input, manipulating it, and producing an output. The program uses algorithms to organize the instructions. A program uses variables, operators, functions/methods, and objects to manipulate the data.
+
+5 - What are the main three types of errors and how do you come across them?
+        1. The first kind of error is a 'syntax error'. In this case, the user writes code that does not respect the syntax of Python, for example, forgetting to put a ':' when defining a function. Python will give the user an error message when it comes across a syntax error.
+        2. The second kind of error is a 'runtime error'. This is an error that becomes apparent when Python tries to run the program. An example of this is asking Python to print a variable that hasn't been defined before the print statement.
+        3. The third kind of error is a 'semantic error'. In this case, the program runs succesfully, but it does something different than the user intended. An example would be forgetting to use the correct order of operations in math operations. For example, if the user wants to find the average of two values and enters: x + y / 2, the program will not produce the correct answer, because it will divide y by 2 before adding x. The user should enter: (x + y)/2
+
+6 - What does it mean to debug a program?
+        Debugging is the process of finding and fixing the errors in a program. It is a bit like detective work. First we must identify the problem, then come up with a hypothesis as to why the problem is occurring. Then we must try to modify the program to fix the problem and see if it works. If not, we must try to change the program in a different way until we fix the problem.
+    What are some ways to debug a program?
+        One way to debug the program is to remove parts of the program until you either remove the part with the bug or it is the only one left. Another is to rollback to your last working version and try again.
+
+7 - What is a “high-level language” / what’s a “low-level-language”?
+        A "high-level language" is a language that humans can use to program computers. It uses elements of real human languages (predominantly English) but in such a way as to enable the compiler/interpreter to translate the language into machine code. Some examples are Python, Java, C++. A "low-level language" is closer to machine code and harder for humans to learn. An example of this is AssemblyLanguage.

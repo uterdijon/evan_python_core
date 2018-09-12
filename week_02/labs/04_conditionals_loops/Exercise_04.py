@@ -1,6 +1,6 @@
 '''
 Print out every prime number between 1 and 100.
-
+'''
 
 ##############
 def is_prime(number):
@@ -8,9 +8,11 @@ def is_prime(number):
     for i in range(2,number):
         if number % i == 0:
             print(number,"is a not a prime number.")
+            prime = False
             break
         else:
             prime = True
+
     if prime == True:
         print(number,"is a prime number.")
 
