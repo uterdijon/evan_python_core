@@ -1,0 +1,41 @@
+1 - What is a boolean expression?
+    A boolean expression is a logical statement that is either TRUE or FALSE.
+    
+2 - What are relational operators used for?
+    Relational operators are used to compare the value of two expressions.
+
+3 - What is the difference between == and = ?
+    == is a relational operator used in conditional statements, for example after "if". = is for assigning a value to a variable.
+    
+4 - What are the three logical operators?
+    The three logical operators are: and, or, and not.
+
+5 - What do relational and logical operators evaluate to?
+    They evaluate to True or False.
+    
+6 - What is the if statement used for?
+    We use "if" to set up conditions that must be met for the program to perform an operation.
+
+7 - What is an if/else statement used for?
+    We use "if" and "else" to provide two different operations for the program to perform depending on whether a condition is met or not.
+
+8 - What is a chained conditional? How do you chain conditionals?
+    A chained conditional provides more than two possible conditions for the program to determine the correct operation. We use "if", "elif", and "else" to form these.
+
+9 - What is a nested conditional?
+    This is when you have a determination of a condition to meet, and after the first determination, there is another determination of condition that the program must run through before the final operations. 
+
+10 - Is there a limit to how many conditional statements you can nest?
+    There is theoretically no limit to conditional statements, however at some point you may exhaust the operational capacity of your computer.
+    
+11 - What is a while loop?
+    A while loop tells Python to perform an operation continuously until a certain condition is met.
+    
+12 - What is a for loop? How is it different than a while loop?
+    We use a for loop to move through all the items in a series such as a string or a list and perform the same operation on each one.
+    
+11 - What does the break statement do?
+    The break statement tells Python to exit the loop.
+
+12 - Is there a limit to how many loops you can nest?
+     There is theoretically no limit to loops, however at some point you may exhaust the operational capacity of your computer.
