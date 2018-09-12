@@ -13,3 +13,18 @@ The output should look something like this:
 	10|20|30|40|50|60|70|80|90|100|
 
 '''
+***************************
+for i in range(1,11):
+    for m in range(1,10):
+        product = i*m
+        if product <= 9:
+            print(product," |",sep="",end="")
+        else:
+            print(product,"|",sep="",end="")
+    prod10 = i*10
+    if prod10 < 100:
+        print(i*10,"  |",sep="",end="")
+    else:
+        print(i*10," |",sep="",end="")
+    print("")    
+***************************

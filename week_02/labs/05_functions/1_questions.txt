@@ -1,54 +1,88 @@
 1 - What is a function?
+	A function is a named sequence of statements that performs a computation. 
 
 2 - What does mean to have a function that "takes" a value?
+	A function takes a value that is given in the parentheses as an argument and transforms it into a return value.
 
 3 - What is a return value?
-
+	The value that a function ends up with after the computation.
+	
 4 - What do type conversion functions do?
+	These take a value that is of one type and return it as a different type, such as string to integer.
 
 5 - What happens if you call the int() function and pass it a string?
+	It returns an integer.
 
 6 - What happens if you call the str() function and pass it an int?
+	It returns a string.
 
 7 - How do you import a class to one of your programs?
+	You need to import the module that the class is in.
 
 8 - How do you use math functions in one of your programs?
+	You have to import the module that contains the function.
 
 9 - What is the dot notation?
+	We use dot notation to identify the module and function: math.sin()
 
 10 - What is composition?
+	We can use different kinds of building blocks as function arguments, for example arithmetic operators.
 
 11 - Give an example of composition in a function call?
+	str(2 ** 3)
 
 12 - How do you define a function?
+	A series of operations you can save and perform on any given argument that you want to use later.
 
 13 - Provide the function header of a function named hello_world().
+	def hello_world():
 
 14 - Provide the function header and body of a function named hello_world() that prints out "Hello World" 3 times.
+	def hello_world():
+		print("Hello World" * 3)
 
 15 - Can functions call other functions?
+	Yes, they can.
 
 16 - Complete Exercise 3.1 (p.26) and 3.2 (p.27) from the text book.
 
+	def right_justify(s):
+    		length = len(s)
+    		print(" " * (70-length), s,sep="")
+		
+	right_justify("Monty")
+
 17 - What is the flow of execution?
+	The order in which a program performs its oprations
 
 18 - Where does a program begin execution?
+	With the first statement
 
 19 - How does a function call change the flow of of execution?
+	It "jumps" out of the order of the program and completes the function, then jumps back in.
 
 20 - Do the rules of composition apply to method parameters as well?
+	Yes.
 
 21 - Do parameters and variables inside of a function exist outside of the method? Why or why not?
+	No, they only exist inside the function/method, because they are part of the function.
 
 22 - How can stack diagrams be useful?
+	They can help us remember which variable can be used in which function.
 
 23 - What is the difference between a "fruitful" function and a void function?
+	A "fruitful" function returns a value. A void function performs an action but doesn't return anything.
 
 24 - What are some of the reasons we separate our code into functions?
+	To eliminate repitition, to make debugging easier, to reuse in different programs
 
 25 - What is the difference between the following two statements?
 	import math
 	<and>
 	from math import *
 
-	How can you use the functions of the math module in each case?
+How can you use the functions of the math module in each case?
+
+If you use the first one, you will have to use dot notation for every function you want to call: math.sin(), with the second you just need to type the name of the function: sin().
+
+	

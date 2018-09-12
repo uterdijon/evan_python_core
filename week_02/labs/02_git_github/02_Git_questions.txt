@@ -1,23 +1,39 @@
 1 - What is git?
 
+	Git is an open-source software used for organizing version control of coding projects.
+
 2 - What is Github?
-
+	Github is a web-based hosting service for version control using Git.
+	
 3 - What is the general flow of git?
-
+	add & commit then push changes
+	
 4 - What is a branch?
+	A branch is a copy of the directory that you make to do your own work on it, then when you are finished, you can merge it back in with the master.
 
 5 - What is a remote?
+	A remote is the place where your code is stored on a remote server.
 
 6 - What is the purpose of adding a remote to a local git repository?
+	?
 
 7 - What are the commands to do the following?
 	- initialize a git repository
+		git init
 	- clone a repository from Github
+		git clone <url>
 	- add a file to the staging area
+		git add <file>
 	- make a commit
+		git commit -m "comment"
 	- push to Github
+		git push origin master
 	- pull from Github
+		git pull origin master
 	- see the names of the branches
+		git log
 	- see the names of the remotes
+		git remote -v
 	- add a new remote
+		git remote add origin <url>
 
