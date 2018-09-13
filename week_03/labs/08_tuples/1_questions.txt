@@ -1,18 +1,28 @@
 1 - What is one important difference between tuples and lists?
+        Lists are mutable; tuples are immutable
 
 2 - What are two ways to create a tuple?
+        _tuple = 'v',
+        _tuple = tuple('v')
 
 3 - Give an example of tuple assignment to assign two variables.
+        name, age = 'Henry', 32
 
 4 - Why is it beneficial to return a tuple from a function?
+        A function can only return one value, but if the value is a tuple, it can serve the function of returning multiple values.
 
 5 - What are variable-length arguments?
+        The parameters begin with '*' and they take multiple arguments and gather them into a tuple. Conversely, writing * before the argument can scatter the argument into a tuple.
 
 6 - How is gather and scatter used?
+        These are used to make arguments conform to the required number of parameters.
 
 7 - What does the zip function do?
+        This takes multiple sequences and returns a list of tuples where each tuple contains one element from each sequence.
 
 8 - What does the items method do?
+         It takes a dictionary returns a list of (key, value) tuple pairs.
 
 9 - How are tuples compared when relational operators are used?
+
 
