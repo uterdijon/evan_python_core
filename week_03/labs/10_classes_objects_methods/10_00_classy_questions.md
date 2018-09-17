@@ -28,7 +28,7 @@ What do they each do?
 - What is object-oriented programming?
     Doing everything within the framework of an object (for example, using methods inside objects instead of independent functions.) Three tenets: Encapsulation, inheritance, polymorphism.
 
-## Methods (page 161)
+## Methods
 
 - What is a method?
     A function inside and related to an object.

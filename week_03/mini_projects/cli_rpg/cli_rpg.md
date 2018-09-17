@@ -12,7 +12,7 @@ Build a text-based role playing game that has at least 2 classes:
 
 The Hero should encounter multiple Opponents of different strengths (or level) and be able to perform different actions in regards to them - at minimum **attack** and **run away**.
 
-If the Hero chooses to **attack**, the program decided through a simulated dice throw that takes the current level into account, whether the Hero or the Opponent win this round.
+If the Hero chooses to **attack**, the program decides through a simulated dice throw that takes the current level into account, whether the Hero or the Opponent win this round.
 
 Implement a result for either winning or losing, e.g. forcing the Hero to wait a few seconds before continuing in case they lose, or removing the Opponent from the Opponent pool in case the Hero wins.
 
