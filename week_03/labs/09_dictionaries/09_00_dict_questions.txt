@@ -1,35 +1,61 @@
 1 - What is the difference between a list and a dictionary?
+        A list has single items, a dictionary has items composed of key/value pairs.
 
 2 - What is a key-value pair?
+        Two pieces of data that are connected in a dictionary.
 
 3 - How do you add an item to the dictionary first_dict using square
     brackets?
+        first_dict[a] = 12
 
 4 - How do you add several items to the dictionary first_dict using
     curly braces?
+        first_dict = {a: 12, b: 8, c:4}
 
 5 - When you print out a dictionary, is there a order to the items?
     Why or why not?
+        No, python dictionaries are unordered.
 
 6 - How do you print out a value using a key?
+        print(first_dict[a])
 
 7 - How does the in operator work with dictionaries?
+        It searches the keys.
 
 8 - What is an implementation?
+        A particular way of performing a computation.
 
 9 - Write an example for loop to traverse a dictionary loop_dict and
     print out the keys and values.
+        for i in my_dict:
+            print(i, my_doct[i])
 
 10 - How can you find search for a key given a value.
     What is this called?
 
+        def reverse_lookup(d, v):
+            for k in d:
+                if d[k] == v:
+                    return k
+            raise LookupError()
+
+
+        This is called a reverse lookup
+
 11 - Can lists be keys of a dictionary? Why or why not?
+        No, because only immutable types can be keys. Keys cannot be changed.
 
 12 - Can lists be values of a dictionary? Why or why not?
+        Yes, because values can be changed.
 
 13 - What is a global variable?
+        A variable that exists outside a function. If you want to change it from within a function, you must type:
+            global /variable/
+            in the function.
 
 14 - How do you reassign a global variable inside of a function?
+        See above.
 
 15 - When do you not need to use the "global" keyword to modify the
     value of a global variable?
+        When you are modifying elements of a list or dictionary.

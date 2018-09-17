@@ -23,3 +23,4 @@ def nested_sum(l):
 
 t = [[1, 2], [3], [4, 5, 6]]
 a = nested_sum(t)
+print(a)

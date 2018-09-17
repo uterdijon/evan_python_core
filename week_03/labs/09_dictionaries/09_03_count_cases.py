@@ -16,4 +16,26 @@ Example output:
     Lower case: 26
     Punctuation: 1
 
+
 '''
+
+import string
+text = input("Enter a sentence: ")
+tally = {'upper': 0, 'lower': 0, 'punct': 0, 'total': 0}
+for char in text:
+    if char.isupper():
+        tally['upper'] +=1
+    elif char.islower():
+        tally['lower'] += 1
+    elif char in string.punctuation:
+        tally['punct'] += 1
+tally['total'] = tally['upper'] + tally['lower'] + tally['punct']
+return
+
+print(tally)
+print(tally['upper'])
+print(tally['lower'])
+print(tally['punct'])
+print(tally['total'])
+    
+        
