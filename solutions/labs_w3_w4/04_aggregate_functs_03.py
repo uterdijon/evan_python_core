@@ -28,8 +28,10 @@ twelve_monkeys = ['James',
                   'Wayne', ]
 
 # compare output from custom function to built-in function
+print([x for x in my_enumerate(twelve_monkeys)] ==
+      [x for x in enumerate(twelve_monkeys)])
+
 print([x for x in my_enumerate(twelve_monkeys)])
-print([x for x in enumerate(twelve_monkeys)])
 
 # start at defined count
 # print([x for x in my_enumerate(twelve_monkeys, 1)])
