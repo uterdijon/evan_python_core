@@ -26,10 +26,10 @@ with open("name.txt", "r") as f:
   print(f"Hello, my name is {name} and I am {age} years old.")
 
 - What is the difference between a relative path and an absolute path?
-  A relative path is just the name of the file and can be used if it is located in the same folder as the script you are running. Otherwise, you must use an absolute path, which includes the entire path from the home directory.
+    A relative path is just the name of the file and can be used if it is located in the same folder as the script you are running. Otherwise, you must use an absolute path, which includes the entire path from the home directory.
 
 - What are some IOExceptions that you might encounter? How are they generated?
-  An IOException is generated when the script is not able to retrieve a file, for example: “file not found” or “disk full”.
+    An IOException is generated when the script is not able to retrieve a file, for example: “file not found” or “disk full”.
 
 - What is a try statement used for?
     This is used when we want to handle exceptions. We tell the interpreter to try something out and then provide except statements to handle the different possible exceptions.

@@ -9,3 +9,8 @@ for i in range(len(courses)):
     print(f"{i}: {courses[i]} python")
 
 '''
+
+courses = ['Intro', 'Intermediate', 'Advanced', 'Epic Hero']
+
+for index, item in enumerate(courses):
+    print(index, item)

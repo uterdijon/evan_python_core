@@ -6,6 +6,6 @@ TIP: remember the title of this course section ;)
 
 '''
 
-import math
-print(math.pi, '.10f')
-print(math.e, '.10f')
+import math  # set number of digits
+print("pi = {}".format(round(math.pi, 10)))
+print("e = {}".format(round(math.e, 10)))
