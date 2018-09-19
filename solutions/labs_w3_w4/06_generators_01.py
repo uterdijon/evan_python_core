@@ -1,10 +1,10 @@
 '''
-Create a Generator that loops over the given list and prints out only
-the items that are divisible by 1111.
+Create a Generator that loops over the given sequence and prints out
+only the items that are divisible by 1111.
 
 '''
 
-# remember: range() also creates a generator object (try printing it!)
+# note: range() also works with a generator object internally
 nums = range(1, 1000000)
 
 # creating the generator expression
