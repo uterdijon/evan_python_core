@@ -9,3 +9,5 @@ for i in range(len(courses)):
     print(f"{i}: {courses[i]} python")
 
 '''
+
+classes = ['Intro', 'Intermediate', 'Advanced', 'Epic Hero']
