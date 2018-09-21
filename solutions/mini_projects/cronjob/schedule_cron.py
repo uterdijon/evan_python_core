@@ -24,7 +24,8 @@ check your `mail` to find out what's going on with CRON.
 
 from crontab import CronTab
 
-my_cron = CronTab(user='martin')  # enter your own username here
+# enter your own username here, or use user=True for current user
+my_cron = CronTab(user='martin')
 # TODO: these paths WON'T WORK FOR YOU!!! gotta replace them with your own :)
 job = my_cron.new(command='/usr/local/bin/python3 /Users/martin/Documents/codingnomads/curriculum/python_core/week_04/mini_projects/cronjob/time_ticker.py')
 job.minutes.every(1)
