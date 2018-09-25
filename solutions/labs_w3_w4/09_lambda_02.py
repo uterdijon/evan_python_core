@@ -6,4 +6,4 @@ What does it return?
 '''
 
 go = lambda: print('get serious!')
-print(go())  # returns 'None'
+go()  # returns 'None'

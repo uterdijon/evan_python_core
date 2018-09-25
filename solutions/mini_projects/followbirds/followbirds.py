@@ -1,5 +1,5 @@
 '''
-Using the tweepy package, build a script that classifies a twitter handle
+Using the tweepy package, build a script that separates twitter handles
 into different groups according to the number of their followers.
 
 The classes can be whatever you like (e.g. I used ASCII art birds ;)
