@@ -94,3 +94,4 @@ fancy_rest = Independent("La Tarantella", "Italian", (15,30), "Madrid", 1983, 12
 wok_amb_gracia.get_price()
 fancy_rest.get_location()
 print(fancy_rest)
+print 7

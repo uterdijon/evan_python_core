@@ -1,0 +1,330 @@
+Please attempt these questions without the book and without using the
+internet. Yes, you heard right! - this is the real thing. ;)
+Ah... - and also use only Vim for coding.
+When you're done please send the file in the slack channel
+shared with your handsome instructors.
+Remember that these questions are meant to be both a revisit as well
+as a checkup for yourself to see which topics come easier and which
+ones need some more focus. Take your time, and have fun! :)
+Also: don't be too hard on yourself if there's something you don't know
+yet. All of you are doing great, and you're well on your way!
+Take note of what comes difficultly, and come back to revisit it later.
+Keep in mind how far you've already come in only two weeks, and that
+learning simply takes time and practice. .. Ok, now let's get practicing!
+========================================================================
+- What are the three primary tenants of Object Oriented Programming (OOP):
+    He doesn't have any; he lost his apartment building after the housing bubble crash. Just kidding... 1. Encapsulation, 2. Inheritance, 3. Polymorphism
+
+- Why is OOP useful? It allows us to contain code in objects that we can then reuse again and again, while altering the attributes to conform to each situation. This reduces production time.
+
+- Using the command line, how do you:
+    - change directories? cd
+    - list the contents of a folder? ls
+    - print the path of the current directory? pwd
+    - move a file from one location to the another? mv
+    - copy a file from one location to another? cp 
+    - create a file? touch
+    - create a folder? mkdir
+    - delete a file? rm 
+    - delete a folder? rm -r
+    - print the contents of a file? cat
+    - edit the contents of a file? vim
+
+- How do you create and activate a virtual environment? venv
+
+- Answer the following question on Git and Github:
+    - What is a branch? A copy of a Git repo that we are using for a specific purpose; the end goal is to merge it back into the master.
+    - What is a remote? A name that points to a Git repo, to which we want to push and pull.
+
+- What are the commands to do the following?
+    - initialize a git: repository git init
+    - clone a repository from Github: git clone
+    - add a file to the staging area: git add
+    - make a commit: git commit -m "..."
+    - push to Github: git push origin master
+    - pull from Github: git pull 
+    - see the names of the branches: git status
+    - see the names of the remotes: git status
+    - add a new remote: git remote add 
+
+- Why is the following code bad form?
+    try:
+        print(10/0)
+    except Exception as exc:
+        print(exc)
+    except ZeroDivisionError as zde:
+        print zde
+
+	The first except statement will catch all exceptions and thus the second except statement will never execute. This isn't useful because it doesn't deal with different kinds of exceptions in different ways.
+
+- Write a function that takes in the name of a file, reads the contents
+of that file word by word and places each word in a list, then prints
+the list to the console.
+
+def list_words(file_name):
+    with open(file_name, "r") as f:
+	word_file = f.readlines()
+    word_list = []
+    for word in word_file:
+        word_list.append(word)
+    print(word_list)
+	
+
+- Create a custom exception below:
+
+def divide(a,b):
+    try:
+        c =a/b
+    except ZeroDivisionError as zde:
+        print("You cannot divide by zero!")
+    finally:
+        print(c)
+         
+
+- Write a very simple function that demonstrates raising the exception above:
+    
+
+- Explain the following keywords:
+    -try: This tells the interpreter what we would like to do.
+    -except: This tells the interpreter what to do if it encounters an error while performing the procedure in the try statement.
+    -raise: This raises an error to the next level.
+    -finally: This tells the interpreter what to do if there are no exceptions.
+    -return: This tells the interpreter what to have a function return.
+    -break: This tells the interpreter to exit out of a function/loop.
+    -continue: ?
+
+- Explain the difference between a class attribute and instance attribute:
+    A class attribute is defined in the class definition and the value applies to every member of that class. An instance attribute is defined when an instance is initialized and applies to only that instance.
+ 
+- Write a complete method that reverses a list in place using only one
+extra variable:
+
+def reverse_list(my_list):
+    for i in range (len(my_list)//2):
+        temp = my_list[i]
+        my_list[i] = my_list[-(i+1)]
+        my_list[-(i+1)] = temp
+
+
+- When should you throw an exception rather than catch the exception?
+?
+
+- Demonstrate a while loop, and a for loop, that print out every other
+odd number between 1000 and 0 in a descending order:
+
+numbr = 999
+while numbr > 0:
+    print(numbr)
+    numbr -= 4
+
+for numbr in range(1,1000,-4):
+    print(numbr)
+    
+
+- How comfortable do you feel answering the questions above?
+
+Relatively.
+
+
+- Describe a variable and a value through their relationship.
+
+The variable comes to the left of the assignment statement, the value to the right. The value is stored in a location and the variable acts as a sort of pointer to the location.
+
+- What are five common data types in Python?
+integer
+string
+float
+list
+tuple
+dictionary
+
+- What is the difference between an expression and a statement?
+A statement involves carrying out an operation. An expression defines a value but there is no manipulation of the data.
+
+- What are relational operators?
+Operators that go between two values and check the relationship of those values:
+3 > 2
+x == 5
+a != 4
+
+- What is the difference between == and = ?
+= assigns a value
+== checks whether two values are equal/equivalent.
+
+- Demonstrate the use of an if/elif/else conditional.
+if x > 6:
+    print(x)
+elif x < 2:
+    x += 1
+else:
+    x -= 4
+
+
+- What does mean to have a function that "takes" a value or argument?
+When we call the function, we have to input one or more arguments that the function will then manipulate in order to produce the return value.
+
+- What is a return value?
+This is the value that a function "spits out" after manipulating the arguments.
+
+- How do you import a class to one of your programs?
+type: "import <class>" or "from <module> import <class>" at the top of the script.
+
+- Give an example of composition in a function call?
+?
+
+- Do parameters and variables inside of a function exist outside of it?
+Why or why not?
+No, they do not. They must be defined outside of the function to exist outside of it. This is because of scope. The only exception is if a function returns a value, this then can be used after the function.
+
+- What is the difference between a "fruitful" function and a void function?
+A "fruitful" function returns a value, a "void" function changes previously defined objects but does not return anything. 
+
+- What are some of the reasons we separate our code into functions?
+To make code more concise, more readable, more efficient, more reusable.
+
+- What is the difference between the following two statements?
+    import math
+    <and>
+    from math import *
+    <and>
+    import math as m
+
+There are three statements :(... The first imports the entire math module. The second does the same thing. The third imports the math module but defines an alias that we can use to make our code less wordy.
+
+    How can you use the functions of the math module in each case?
+
+math.sqrt(x)
+sqrt()
+m.sqrt()
+
+- What is an index?
+This is the location of an item in a list or a string.
+example: _list[1]
+
+- How do you use slicing to produce the string "coding" from the string
+"I love coding!!!"?
+
+my_string = "I love coding!!!"
+words = my_string.slice()
+print(words[2])
+
+- How do you invoke the replace() method on the string
+'coding is the best' to replace all 's' characters with 'z' characters?
+my_string = "coding is the best"
+my_string.replace("s", "z")
+
+- What is the difference between and list and a string?
+A list is mutable, a string is immutable.
+
+- How do you use a delimiter with the split() method?
+_string.split(",")
+
+
+- If two objects are identical does that also make them equivalent?
+Why or why not?
+Yes it does mean this. Identical means the variables refer to the same object, eequivalent means they have an equal value to each other. Of course, if they are the same value, they have an equal value.
+
+
+- What is a reference?
+This is a variable that points to an object.
+
+- What is it called when an object has more than one reference?
+aliasing
+
+- How do you add an item to the dictionary first_dict using square
+    brackets?
+first_dict["key"] = value
+
+- Write an example for loop to traverse a dictionary loop_dict and
+    print out the keys and values.
+
+for k in loop_dict:
+    print(f"{k} : {loop_dict[k]")
+
+- What is a class?
+    A class is a blueprint for objects that includes attributes that the objects can inherit.
+
+- What are class attributes?
+    These are variables that belong to the class and are pre-defined so that every object inherits them.
+
+- What does it mean when an object is embedded?
+    This is when an object belongs to another object. We use dot notation to demonstrate the relationship:
+example: dog.color
+
+- How is a method different than a function?
+A method is embedded into an object and in order to use it, we must use dot notation:
+str.strip()
+
+A function is independent of any objects:
+print()
+
+- What is the `__init__` method and what is it used for?
+We use this in the class definition to set up a way to create individual instances of the objects in the class. We set up the variables that we will enter values for when we initialise the object.
+
+- Give an example `__init__` method for a `Car` class with attributes:
+`make`, `model` and `year`.
+class Car():
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+- What is operator overloading? Give an example.
+This is when we set up default values for a variable when we define a method/function.
+Example:
+class Car():
+    def __init__(self, make='VW', model='Passat', year='2005'):
+        self.make = make
+        self.model = model
+        self.year = year
+
+
+- How does a class inherit another class?
+class Dog(Animal)
+
+- How do you open a file in write mode? Write some example code below.
+with open("file.txt", "w") as f:
+
+- Can you have a 'try' without an 'except'? Can you have an 'except' without
+a 'try'? Bonus: How does 'else' fit into this picture?
+?
+
+- What is the variable `__name__` used for?
+This appears in the console when we call the object by itself.
+
+- Write a list comprehension to add 1 to all items in a list of
+integers called "_list"
+my_list = [x + 1 for x in _list]
+
+- What does enumerate() do?
+This assigns a number to items in a sequence and returns this as a list.
+
+- You have an object that prints "<generator object <genexpr> at 0x104150eb8>"
+to the console. How can you access its values?
+You can call the list function on it:
+new_list = list(genexpr)
+
+- What is the advantage of using a generator object compared to a list?
+You take up less space in memory so the program runs faster.
+
+- What are the key (conceptual) points when constructing a decorator
+function? What does it need to do?
+A decorator function takes another function as an argument, creates a wrapper function that manipulates the input function, and returns the wrapper function. Wethen can attach the decorator function to the original function with '@' and every time we call the original function we will get the wrapper function returned.
+
+- When are decorator functions useful?
+For example, when building webpages and we want to automatically assign HTML formatting to every object we create.
+
+- What happens when you use the @decorator syntax when defining a function?
+It turns the function name into a variable for the decorator function which returns a wrapper function.
+
+- Write code that prints out all items passed to a function.
+The amount of items should be able to be different for every function call.
+
+def print_all(*args):
+    print(args)
+
+
+========================================================================
+Congrats, nice job for getting all the way to the end! :)
+Here's a picture of an island for you: 🏝
+

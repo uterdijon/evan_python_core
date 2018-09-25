@@ -1,0 +1,1 @@
+{"underwear": 10, "socks": 5, "hats": 4, "shoes": 16, "pants": 3, "canes": 1, "rings": 1}

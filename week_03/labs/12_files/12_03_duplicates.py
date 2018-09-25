@@ -18,3 +18,20 @@ Source: Read through the "Files" chapter in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
+import os
+new_dir = []
+mp3_list = []
+
+def list_mp3(my_path):
+    #os.chdir(my_path)
+    for i in list(os.listdir(my_path)):
+        if os.path.isdir(i):
+            new_dir.append(i)
+        else:
+            if i.endswith(".mp3"):
+                mp3_list.append(i)
+    list_mp3(new_dir)
+    print(list_mp3)
+
+dir1 = '/Users/evan/OneDrive/Music/Aerosmith'
+list_mp3(dir1)
