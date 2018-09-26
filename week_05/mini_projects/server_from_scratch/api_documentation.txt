@@ -1,4 +1,5 @@
 Introduction:
+
 This API allows users to add and delete categories of products to the inventory as well as to change the number of items in each category.
 
 Allowed HTTPs requests:
@@ -13,7 +14,8 @@ Query format:
 item=<product> : This should include the name of the product category. The name should be plural.
 num=<quantity> : This is the number of items to add or subtract in the category. For adding, please use a positive number, for subtracting, please use a negative number.
 
-Example:
+Examples:
+
 PATCH ?item=purses&num=+1    : This will add one purse.
 PATCH ?item=boots&num=-3     : This will subtract three purses.
 DELETE ?item=purse           : This will delete the category of purses.
