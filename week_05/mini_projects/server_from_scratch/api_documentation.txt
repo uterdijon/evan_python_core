@@ -2,7 +2,13 @@ Introduction:
 
 This API allows users to add and delete categories of products to the inventory as well as to change the number of items in each category.
 
-Allowed HTTPs requests:
+Path:
+
+The API can be found at: localhost:8000
+
+The path should be: /inventory
+
+Allowed HTTP requests:
 
 GET     : Retrieve the current inventory
 POST    : Create a new product in the inventory and set quantity to zero.

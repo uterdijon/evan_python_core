@@ -1,5 +1,106 @@
-import json
-import sys
+from pprint import pprint
+import requests
+from locations import cities
+
+
+
+for place in locations.cities:
+    url = self.create_url(place)
+
+
+class MyApp():
+
+
+    def create_url(self, place):
+        city, country = place
+        query = f'address={city}+{country}'
+        url = f'http://www.datasciencetoolkit.org/maps/api/geocode/json?{query}'
+        return url
+
+    def add_coord(self, place):
+        url = self.create_url(place)
+        r = requests.get(url)
+        city_coord = data = r.json()
+
+'''
+r = requests.get("http://api.openweathermap.org/data/2.5/weather?q=\
+                    London,uk&appid=b2175c44ff368c401ed884482283a418",
+                    json=True)
+"location": {"lat": 37.42382, "lng": -122.08999},
+
+city_locations = {
+    'Madrid': (40.416775, -3.703790)
+    'Barcelona': (41.385063, 2.173404)
+    'Valencia': (39.470242, -0.376800)
+
+
+
+
+
+
+}
+
+
+
+#DARK_SKY_KEY = os.environ['DARK_SKY_KEY']
+
+DARK_SKY_KEY = 0fcd0937d43a26c91f822901a94d1cc8
+https://api.darksky.net/forecast/[latitude],[longitude],[time]
+
+
+
+r = requests.get("http://api.openweathermap.org/data/2.5/weather?q=\
+                    London,uk&appid=b2175c44ff368c401ed884482283a418",
+                    json=True)
+
+
+data = r.json()
+
+# pprint(r.headers)
+pprint(data)
+# print(type(data))
+
+print(data['visibility'])
+
+
+
+
+
+
+
+#import json
+#import sys
+
+#import os
+#import tweepy
+#from pprint import pprint
+
+# fetch the secrets from our virtual environment variables
+#CONSUMER_KEY = os.environ['TWITTER_API_KEY']
+#CONSUMER_SECRET = os.environ['TWITTER_API_SECRET_KEY']
+#ACCESS_TOKEN = os.environ['TWITTER_ACCESS_TOKEN']
+#ACCESS_SECRET = os.environ['TWITTER_ACCESS_SECRET']
+
+# authenticate to the service we're accessing
+#auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+#auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
+# create the connection
+#api = tweepy.API(auth)
+
+
+# define a handle to inspect for quicker reference
+#handle = 'rondaz_g'  # for example purposes; prop any handle you want!
+#user = api.get_user(handle)
+#user_data = user._json
+#num_friends = user.friends_count
+
+#user = api.get_user(handle)
+#    user_data = user._json
+#    user_dict[handle] = user_data
+#    return user_dict
+
+
+
 
 class MyApp:
 
