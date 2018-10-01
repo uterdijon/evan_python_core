@@ -15,17 +15,19 @@ settings.configure(
 
 
 # Django settings need to be configured before other imports happen
-# thus the uncommone double-import lines above and below here
+# thus the uncommon double-import lines above and below here
 from django.urls import path
 from django.http import HttpResponse
 
+
 # building views.py
 def index(request):
-    return HttpResponse("It is loose!")
+    return HttpResponse("<marquee direction='right'>It is loose!</marquee>")
+
 
 # building urls.py
 urlpatterns = [
-    path('', index)
+    path('', index)  # the empty home path URL
 ]
 
 # building manage.py

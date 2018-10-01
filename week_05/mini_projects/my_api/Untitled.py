@@ -10,20 +10,10 @@ class MyApp():
     pass
 
 class MyPlace():
+
     def __init__(self, name):
         self.name = name
-        self.jan = {}
-        self.feb = {}
-        self.mar = {}
-        self.apr = {}
-        self.may = {}
-        self.jun = {}
-        self.jul = {}
-        self.aug = {}
-        self.sep = {}
-        self.oct = {}
-        self.nov = {}
-        self.dec = {}
+        self.data = {}
 
     def create_url(self, place):
         #Takes a tuple of city and country and returns the url to request coordinates from datasciencetookkit.org.
@@ -121,9 +111,26 @@ class MyPlace():
 
 
 
-    def get_month_profile(self, place, ds_key):
-        min_temp = abself.get_month_avg(place, ds_key, month, "temperatureMin")
-        self.jan[min_temp] = min_temp
+    def get_month_profile(self, place, ds_key, month):
+        self.data[month] = {}
+        min_temp = self.get_month_avg(place, ds_key, month, "temperatureMin")
+        self.data[month][min_temp] = min_temp
+        max_temp = self.get_month_avg(place, ds_key, month, "temperatureMax")
+        self.data[month][max_temp] = max_temp
+        dew_point = self.get_month_avg(place, ds_key, month, "dewPoint")
+        self.data[month][dew_point] = dew_point
+        cloud_cover = self.get_month_avg(place, ds_key, month, "cloudCover")
+        self.data[month][cloud_cover] = cloud_cover
+        wind_speed = self.get_month_avg(place, ds_key, month, "windSpeed")
+        self.data[month][wind_speed] = wind_speed
+        humidity = self.get_month_avg(place, ds_key, month, "humidity")
+        self.data[month][humidity] = cloud_cover
+        precipitation = self.get_month_avg(place, ds_key, month, "precipIntensity")
+        self.data[month][precipitation] = precipitation
+        return self.data[month]
+
+
+
 
 
         for month in range(1,13):
@@ -144,8 +151,9 @@ class MyPlace():
 
 
 obj = MyApp()
+obj2 = MyPlace("Barcelona")
 ds_key = '0fcd0937d43a26c91f822901a94d1cc8'
 unixtime = 1168819200
-print(obj.get_precipitation(cities[1], ds_key, unixtime))
-
-print(obj.get_month_avg(cities[1], ds_key, 1, "temperatureMin"))
+#print(obj.get_precipitation(cities[1], ds_key, unixtime))
+print(obj2.get_month_profile(cities[1], ds_key, 1))
+#print(obj.get_month_avg(cities[1], ds_key, 1, "temperatureMin"))
