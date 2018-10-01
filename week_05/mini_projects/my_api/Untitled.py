@@ -112,22 +112,23 @@ class MyPlace():
 
 
     def get_month_profile(self, place, ds_key, month):
+        #Takes place and month as arguments and adds the average climate data for that place and month to the dictionary self.data.
         self.data[month] = {}
         min_temp = self.get_month_avg(place, ds_key, month, "temperatureMin")
-        self.data[month][min_temp] = min_temp
+        self.data[month]["min_temp"] = min_temp
         max_temp = self.get_month_avg(place, ds_key, month, "temperatureMax")
-        self.data[month][max_temp] = max_temp
+        self.data[month]["max_temp"] = max_temp
         dew_point = self.get_month_avg(place, ds_key, month, "dewPoint")
-        self.data[month][dew_point] = dew_point
+        self.data[month]["dew_point"] = dew_point
         cloud_cover = self.get_month_avg(place, ds_key, month, "cloudCover")
-        self.data[month][cloud_cover] = cloud_cover
+        self.data[month]["cloud_cover"] = cloud_cover
         wind_speed = self.get_month_avg(place, ds_key, month, "windSpeed")
-        self.data[month][wind_speed] = wind_speed
+        self.data[month]["wind_speed"] = wind_speed
         humidity = self.get_month_avg(place, ds_key, month, "humidity")
-        self.data[month][humidity] = cloud_cover
+        self.data[month]["humidity"] = cloud_cover
         precipitation = self.get_month_avg(place, ds_key, month, "precipIntensity")
-        self.data[month][precipitation] = precipitation
-        return self.data[month]
+        self.data[month]["precipitation"] = precipitation
+        return self.data
 
 
 
@@ -156,4 +157,5 @@ ds_key = '0fcd0937d43a26c91f822901a94d1cc8'
 unixtime = 1168819200
 #print(obj.get_precipitation(cities[1], ds_key, unixtime))
 print(obj2.get_month_profile(cities[1], ds_key, 1))
+print(obj2.data)
 #print(obj.get_month_avg(cities[1], ds_key, 1, "temperatureMin"))
